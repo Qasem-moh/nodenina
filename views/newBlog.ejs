@@ -9,7 +9,7 @@
 
 <body>
     <nav>
-        <div>
+        <div class="site-title">
             <a href="/">
                 <h2>Blog developer</h2>
             </a>
@@ -22,8 +22,16 @@
         </ul>
     </nav>
 
-    <div class="blogs content">
-        <h2>All blogs</h2>
+    <div class="create-blog content">
+        <form>
+            <label for="title">Blog title: </label>
+            <input type="text" id="title" required />
+            <label for="snippet">Blog snippet: </label>
+            <input type="text" id="snippet" required />
+            <label for="body">Blog body: </label>
+            <textarea type="text" id="body" required></textarea>
+            <button>Submit</button>
+        </form>
     </div>
 </body>
 
